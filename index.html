@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>DigiTools</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2>DigiTools</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Tools</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button>Login</button>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Supercharge Your Digital Workflow</h1>
+            <p>Premium digital tools for creators and developers.</p>
+            <button>Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/300" alt="hero"/>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div>50K+ Users</div>
+        <div>200+ Tools</div>
+        <div>4.9 Rating</div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+        <h2>Premium Digital Tools</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>AI Mockup Pro</h3>
+                <p>$29</p>
+                <button onclick="addToCart('AI Mockup Pro', 29)">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <h3>SEO Toolkit</h3>
+                <p>$39</p>
+                <button onclick="addToCart('SEO Toolkit', 39)">Buy Now</button>
+            </div>
+
+            <div class="card">
+                <h3>Resume Builder</h3>
+                <p>$19</p>
+                <button onclick="addToCart('Resume Builder', 19)">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <h2>Get Started in 3 Steps</h2>
+        <div class="step-box">
+            <div>Create Account</div>
+            <div>Choose Product</div>
+            <div>Start Creating</div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+        <h2>Simple Pricing</h2>
+        <div class="price-cards">
+            <div class="price-card">Starter - $9</div>
+            <div class="price-card pro">Pro - $29</div>
+            <div class="price-card">Enterprise - $99</div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Ready to Transform Your Workflow?</h2>
+        <button>Start Now</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DigiTools</p>
+    </footer>
+
+    <!-- Cart -->
+    <div id="cart" class="cart">
+        <h3>Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
